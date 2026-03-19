@@ -7,9 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fleur+De+Leah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
     <title>Creatures of the World's Myths</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+<div id="particles"></div>
 
 <header>
     <nav>
@@ -25,7 +29,10 @@
 <main>
 
    
+    <div class="logo-wrapper">
     <img src="images/mythlogonobg.png" alt="Myth Logo" class="logo">
+    
+</div>
 
     <h1>Creatures of the World's Myths</h1>
     <h3>Discover the legendary beings that shaped cultures across the world.</h3>
@@ -55,6 +62,7 @@
 
     </div>
 
+
 </main>
 
 <footer>
@@ -70,6 +78,36 @@
     <p>Designed by Clarisa for educational purposes.</p>
 
 </footer>
+
+<script>
+const container = document.getElementById("particles");
+
+function createParticle() {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+
+    // Random size
+    const size = Math.random() * 6 + 4;
+    particle.style.width = size + "px";
+    particle.style.height = size + "px";
+
+    // Random horizontal position
+    particle.style.left = Math.random() * 100 + "vw";
+
+    // Random animation duration
+    particle.style.animationDuration = (Math.random() * 6 + 6) + "s";
+
+    container.appendChild(particle);
+
+    // Remove after animation
+    setTimeout(() => {
+        particle.remove();
+    }, 12000);
+}
+
+// Create particles continuously
+setInterval(createParticle, 200);
+</script>
 
 </body>
 </html>
