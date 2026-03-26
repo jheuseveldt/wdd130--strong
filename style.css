@@ -378,6 +378,10 @@ footer p {
     box-shadow: 3px 3px 5px #000000;
 }
 
+#dragon-page footer{
+    justify-items: center;
+}
+
 #kitsune-page{
     background: #eadecf;
     font-family: 'Lora', serif;
@@ -414,6 +418,11 @@ footer p {
     border: 5px solid #C65A2E;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #000000;
+}
+
+#kitsune-page footer{
+    justify-items: center;
+    color: #f1f5f9;
 }
 
 @media (max-width: 600px) {
