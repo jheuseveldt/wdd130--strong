@@ -341,6 +341,81 @@ footer p {
     font-size: 0.9rem;
 }
 
+#dragon-page{
+    background: linear-gradient(#0A1A2F, #172f4e);
+    font-family: 'Lora', serif;
+}
+
+#dragon-page p{
+    font-size: 1.3em;
+    max-width: 50%;
+}
+
+#dragon-page ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.3em;
+    max-width: 60%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+#dragon-header{
+    font-size: 5em;
+    text-shadow: 2px 2px 3px #172f4e;
+}
+
+.dragon-head{
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    margin: 2em auto 1em auto;
+}
+
+#dragon{
+    width: 20%;
+    border: 5px solid #D4A437;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+}
+
+#kitsune-page{
+    background: #eadecf;
+    font-family: 'Lora', serif;
+    color: #000;
+}
+
+#kitsune-page p{
+    font-size: 1.3em;
+    max-width: 50%;
+}
+
+#kitsune-page ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.3em;
+    max-width: 60%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+#kitsune-header{
+    font-size: 5em;
+    text-shadow: 2px 2px 3px black;
+}
+
+.kitsune-head{
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    margin: 2em auto 1em auto;
+}
+
+#kitsune{
+    width: 20%;
+    border: 5px solid #C65A2E;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+}
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
